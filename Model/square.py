@@ -10,7 +10,7 @@ class Square:
         self.right_access = False
         self.down_access = False
         self.left_access = False
-        self.object = None
+        self.visible = False
 
     def set_up(self, square):
         self.up = square
@@ -36,14 +36,14 @@ class Square:
     def give_left_access(self):
         self.left_access = True
 
-    def get_up(self, square):
-        self.up = square
+    def get_up(self):
+        return self.up
 
-    def get_right(self, square):
-        self.right = square
+    def get_right(self):
+        return self.right
 
-    def get_down(self, square):
-        self.down = square
+    def get_down(self):
+        return self.down
 
-    def get_left(self, square):
-        self.left = square
+    def get_left(self):
+        return self.left
